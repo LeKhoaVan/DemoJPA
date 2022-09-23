@@ -16,9 +16,10 @@ import java.time.LocalDateTime;
 @Getter
 public class ChuyenBay {
     @Id
+    @Column(name = "ma_cb")
     private String maCB;
     private String gaDi;
-    @Column(name = "ga_den")
+
     private String gaDen;
     private int doDai;
     private LocalDateTime gioDi;
