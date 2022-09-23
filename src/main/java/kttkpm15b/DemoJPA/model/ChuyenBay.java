@@ -25,31 +25,16 @@ public class ChuyenBay {
     private LocalDateTime gioDen;
     private int chiPhi;
 
-    public String getMaCB() {
-        return maCB;
-    }
-
-    public String getDaDi() {
-        return gaDi;
-    }
-
-    public String getGaDen() {
-        return gaDen;
-    }
-
-    public int getDoDai() {
-        return doDai;
-    }
-
-    public LocalDateTime getGioDi() {
-        return gioDi;
-    }
-
-    public LocalDateTime getGioDen() {
-        return gioDen;
-    }
-
-    public int getChiPhi() {
-        return chiPhi;
+    @Override
+    public String toString() {
+        return "ChuyenBay{" +
+                "maCB='" + maCB + '\'' +
+                ", gaDi='" + gaDi + '\'' +
+                ", gaDen='" + gaDen + '\'' +
+                ", doDai=" + doDai +
+                ", gioDi=" + gioDi +
+                ", gioDen=" + gioDen +
+                ", chiPhi=" + chiPhi +
+                '}';
     }
 }

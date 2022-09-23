@@ -12,7 +12,7 @@ public class ChuyenBayService {
     @Autowired
     ChuyenBayRepository chuyenBayRepository;
 
-    public List<ChuyenBay> findByGa(){
-       return chuyenBayRepository.findbyGa();
+    public List<ChuyenBay> findByGa(String name){
+        return chuyenBayRepository.findbyGa(name);
     }
 }
