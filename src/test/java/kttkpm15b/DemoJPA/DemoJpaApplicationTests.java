@@ -65,4 +65,10 @@ class DemoJpaApplicationTests {
 		System.out.format("So chuyen bay tu Sai Gon: %d",chuyenBayService.countByGaDi("SGN"));
 	}
 
+	@Test
+	void findByLoai(){
+		for(MayBay mb : mayBayService.findByLoai("Boeing")){
+			System.out.println(mb.toString());
+		}
+	}
 }

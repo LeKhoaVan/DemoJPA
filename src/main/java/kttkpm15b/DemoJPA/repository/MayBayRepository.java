@@ -12,4 +12,7 @@ import java.util.List;
 public interface MayBayRepository extends JpaRepository<MayBay,Integer> {
     @Query(nativeQuery = true, value = "select * from maybay where tam_bay > :tambay ")
     public List<MayBay> findByTamBayGreaterThan(@Param("tambay") Integer tambay);
+
+    @Query(nativeQuery = true, value = "select * from maybay where loai like :loaimb"+"%")
+    public List<MayBay> findByLoai(@Param("loaimb") String loai);
 }

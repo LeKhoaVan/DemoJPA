@@ -15,4 +15,7 @@ public class MayBayService {
     public List<MayBay> findByTamBay(int tambay){
         return mayBayRepository.findByTamBayGreaterThan(tambay);
     }
+    public List<MayBay> findByLoai(String loai){
+        return mayBayRepository.findByLoai(loai);
+    }
 }
