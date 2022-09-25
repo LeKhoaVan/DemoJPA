@@ -21,4 +21,7 @@ public class MayBayService {
     public List<String> findMBbyTen(String ten){
         return mayBayRepository.findMBByTen(ten);
     }
+    public int countByNVMB(String ma_nv){
+        return mayBayRepository.countMBByNV(ma_nv);
+    }
 }

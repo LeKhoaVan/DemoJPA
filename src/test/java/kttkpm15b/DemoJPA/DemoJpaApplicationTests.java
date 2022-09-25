@@ -96,4 +96,28 @@ class DemoJpaApplicationTests {
 			System.out.format("Ma may bay do Ho Nguyen lai: %s \n",mb);
 		}
 	}
+	@Test
+	void findByTime(){
+		for(ChuyenBay cb : chuyenBayService.findByTime("12:00:00") ){
+			System.out.println(cb.toString());
+		}
+	}
+
+	@Test
+	void findByGaAndTime(){
+		for(ChuyenBay cb : chuyenBayService.findByGaAndTime("DAD")){
+			System.out.println(cb.toString());
+		}
+	}
+	@Test
+	void countMBByNv(){
+		System.out.format("So may bay ma phi cong: %s lay: %d","269734834",mayBayService.countByNVMB("269734834"));
+	}
+
+	@Test
+	void findByNotPC(){
+		for(NhanVien nv : nhanVienService.findByNotPC() ){
+			System.out.println(nv.toString());
+		}
+	}
 }

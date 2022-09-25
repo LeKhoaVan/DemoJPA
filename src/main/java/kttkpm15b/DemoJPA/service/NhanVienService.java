@@ -24,4 +24,7 @@ public class NhanVienService {
     public List<NhanVien> findByNVMB(String loai){
         return nhanVienRepository.findNVByMB(loai);
     }
+    public List<NhanVien> findByNotPC(){
+        return nhanVienRepository.findByNotPC();
+    }
 }
