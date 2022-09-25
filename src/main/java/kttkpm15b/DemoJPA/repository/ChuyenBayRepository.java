@@ -14,5 +14,9 @@ public interface ChuyenBayRepository extends JpaRepository<ChuyenBay, String> {
     @Query(nativeQuery = true, value = "select * from chuyenbay where ga_den = :name ")
     public List<ChuyenBay> findbyGa(@Param("name") String name);
 
+    @Query(nativeQuery = true, value = "select * from chuyenbay where do_dai < :max and do_dai > :min")
+    public List<ChuyenBay> findByDoDai(@Param("max") int max,
+                                       @Param("min") int min);
+
 
 }

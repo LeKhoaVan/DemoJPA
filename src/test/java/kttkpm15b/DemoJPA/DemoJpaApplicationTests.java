@@ -46,4 +46,11 @@ class DemoJpaApplicationTests {
 		}
 	}
 
+	@Test
+	void findByDoDaiTest(){
+		for(ChuyenBay cb : chuyenBayService.findByDoDai(10000,8000) ){
+			System.out.println(cb.toString());
+		}
+	}
+
 }

@@ -19,4 +19,8 @@ public class ChuyenBayService {
         return chuyenBayRepository.findbyGa(name);
     }
 
+    public List<ChuyenBay> findByDoDai(int max, int min){
+        return chuyenBayRepository.findByDoDai(max, min);
+    }
+
 }
