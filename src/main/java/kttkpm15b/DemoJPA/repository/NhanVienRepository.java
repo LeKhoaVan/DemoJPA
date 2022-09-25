@@ -12,4 +12,7 @@ import java.util.List;
 public interface NhanVienRepository extends JpaRepository<NhanVien,String> {
     @Query(nativeQuery = true, value = "select * from nhanvien where luong > :luongcb")
     public List<NhanVien> findLuongGreateThan(@Param("luongcb") int luongcb);
+
+    @Query(nativeQuery = true, value = "select sum(luong) from nhanvien")
+    public float sumLuong();
 }

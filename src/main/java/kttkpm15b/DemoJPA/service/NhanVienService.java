@@ -14,4 +14,7 @@ public class NhanVienService {
     public List<NhanVien> findByLuongGreateThan(int luongcb){
         return nhanVienRepository.findLuongGreateThan(luongcb);
     }
+    public float sumLuong() {
+        return nhanVienRepository.sumLuong();
+    }
 }

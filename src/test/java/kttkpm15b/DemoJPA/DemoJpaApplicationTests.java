@@ -71,4 +71,9 @@ class DemoJpaApplicationTests {
 			System.out.println(mb.toString());
 		}
 	}
+
+	@Test
+	void countLuong(){
+		System.out.format("Tong tien luong nhan vien: %f",nhanVienService.sumLuong());
+	}
 }
