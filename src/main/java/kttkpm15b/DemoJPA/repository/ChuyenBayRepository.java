@@ -22,4 +22,6 @@ public interface ChuyenBayRepository extends JpaRepository<ChuyenBay, String> {
     public List<ChuyenBay> findByGaDiDen(@Param("ga_di") String gaDi,
                                          @Param("ga_den") String gaDen);
 
+    @Query(nativeQuery = true, value = "select count(ma_cb) from chuyenbay where ga_di = :ga_di")
+    public int countByGaDi(@Param("ga_di") String gaDi);
 }

@@ -60,4 +60,9 @@ class DemoJpaApplicationTests {
 		}
 	}
 
+	@Test
+	void countByGaDi(){
+		System.out.format("So chuyen bay tu Sai Gon: %d",chuyenBayService.countByGaDi("SGN"));
+	}
+
 }

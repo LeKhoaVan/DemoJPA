@@ -25,5 +25,8 @@ public class ChuyenBayService {
     public List<ChuyenBay> findByGaDenDi(String gaDi, String gaDen){
         return chuyenBayRepository.findByGaDiDen(gaDi, gaDen);
     }
+    public int countByGaDi(String gaDi){
+        return chuyenBayRepository.countByGaDi(gaDi);
+    }
 
 }
