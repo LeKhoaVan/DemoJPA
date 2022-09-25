@@ -10,4 +10,5 @@ Câu 03
 Câu 04
 ![Cau04](https://user-images.githubusercontent.com/99703868/192143212-3e48860a-ac97-456b-914a-285111437d92.png)
 
+Các câu còn lại hình minh chứng ở trong thư mục Image_Successful
 
