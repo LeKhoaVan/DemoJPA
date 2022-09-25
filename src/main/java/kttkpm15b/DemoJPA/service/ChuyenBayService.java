@@ -22,5 +22,8 @@ public class ChuyenBayService {
     public List<ChuyenBay> findByDoDai(int max, int min){
         return chuyenBayRepository.findByDoDai(max, min);
     }
+    public List<ChuyenBay> findByGaDenDi(String gaDi, String gaDen){
+        return chuyenBayRepository.findByGaDiDen(gaDi, gaDen);
+    }
 
 }

@@ -53,4 +53,11 @@ class DemoJpaApplicationTests {
 		}
 	}
 
+	@Test
+	void findByGaDiDen(){
+		for(ChuyenBay cb : chuyenBayService.findByGaDenDi("SGN","BMV") ){
+			System.out.println(cb.toString());
+		}
+	}
+
 }
