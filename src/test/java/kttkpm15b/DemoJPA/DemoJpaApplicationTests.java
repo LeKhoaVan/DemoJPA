@@ -76,4 +76,24 @@ class DemoJpaApplicationTests {
 	void countLuong(){
 		System.out.format("Tong tien luong nhan vien: %f",nhanVienService.sumLuong());
 	}
+
+	@Test
+	void findMVByBoe(){
+		for (String maNV : nhanVienService.findNVByBoe("Boeing")){
+			System.out.format("Ma NV Lay Boeing: %s \n",maNV);
+		}
+	}
+	@Test
+	void findByNVMB(){
+		for(NhanVien nv : nhanVienService.findByNVMB("747") ){
+			System.out.println(nv.toString());
+		}
+	}
+
+	@Test
+	void findMBbyTen(){
+		for(String mb : mayBayService.findMBbyTen("Nguyen")){
+			System.out.format("Ma may bay do Ho Nguyen lai: %s \n",mb);
+		}
+	}
 }

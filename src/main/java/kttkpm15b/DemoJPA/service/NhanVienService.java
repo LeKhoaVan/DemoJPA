@@ -17,4 +17,11 @@ public class NhanVienService {
     public float sumLuong() {
         return nhanVienRepository.sumLuong();
     }
+    public List<String> findNVByBoe(String loai){
+        return nhanVienRepository.findMaNVByBoe(loai);
+    }
+
+    public List<NhanVien> findByNVMB(String loai){
+        return nhanVienRepository.findNVByMB(loai);
+    }
 }

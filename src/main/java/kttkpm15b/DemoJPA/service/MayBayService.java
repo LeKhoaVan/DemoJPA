@@ -18,4 +18,7 @@ public class MayBayService {
     public List<MayBay> findByLoai(String loai){
         return mayBayRepository.findByLoai(loai);
     }
+    public List<String> findMBbyTen(String ten){
+        return mayBayRepository.findMBByTen(ten);
+    }
 }
